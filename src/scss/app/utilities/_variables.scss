@@ -1,0 +1,196 @@
+
+
+// Colors Variables Start Here
+
+$Primary: #366CE3;
+$Primary-Light: #7298eb;
+$Primary-Dark: #264c9f;
+$Secondary: #D0FC00;
+$Secondary-Light: #d9fd33;
+$Secondary-Dark: #a6ca00;
+$Gray-Shade-1: #666666;
+$Gray-Shade-2: #999999;
+$Gray-Shade-3: #CFCFCF;
+$Gray-Shade-4: #F2F2F2;
+$Black-Color: #000000;
+$White-Color: #FFFFFF;
+$Dark-01: rgba(255, 255, 255, 0.1);
+$Dark-015: rgba(255, 255, 255, 0.15);
+$Dark-005: rgba(255, 255, 255, 0.05);
+
+// Colors Variables End Here
+
+// Font Size Variables Start Here
+
+$font-size-h1: 48px;
+$font-size-h2: 40px;
+$font-size-h3: 34px;
+$font-size-h4: 28px;
+$font-size-h5: 24px;
+$font-size-h6: 20px;
+$font-size-p-large: 20px;
+$font-size-p-medium: 18px;
+$font-size-p-small: 16px;
+$font-size-p-x-small: 14px;
+$font-size-p-xx-small: 12px;
+
+// Font Size Variables End Here
+
+// Line Heights Variables Start Here
+
+$line-height-h1: 64px;
+$line-height-h2: 56px;
+$line-height-h3: 48px;
+$line-height-h4: 44px;
+$line-height-h5: 40px;
+$line-height-h6: 36px;
+$line-height-p-large: 36px;
+$line-height-p-medium: 32px;
+$line-height-p-small: 30px;
+$line-height-p-x-small: 28px;
+$line-height-p-xx-small: 24px;
+
+// Line Heights Variables End Here
+
+// Font Family Variables Start Here
+
+$Font-Family-Inter-Black: "Inter-Black";
+$Font-Family-Inter-SemiBold: "Inter-SemiBold";
+$Font-Family-Inter-Regular: "Inter-Regular";
+$Font-Family-Inter-Medium: "Inter-Medium";
+$Font-Family-Inter-Light: "Inter-Light";
+$Font-Family-Inter-Bold: "Inter-Bold";
+$Font-Family-Inter-ExtraLight: "Inter-ExtraLight";
+$Font-Family-Inter-ExtraBold: "Inter-ExtraBold";
+$Font-Family-Inter-Thin: "Inter-Thin";
+$Font-Family-Montserrat-Bold: "Montserrat-Bold";
+$Font-Family-Montserrat-Black: "Montserrat-Black";
+$Font-Family-Montserrat-ExtraBold: "Montserrat-ExtraBold";
+$Font-Family-Montserrat-Light: "Montserrat-Light";
+$Font-Family-Montserrat-ExtraLight: "Montserrat-ExtraLight";
+$Font-Family-Montserrat-Medium: "Montserrat-Medium";
+$Font-Family-Montserrat-Thin: "Montserrat-Thin";
+$Font-Family-Montserrat-Regular: "Montserrat-Regular";
+$Font-Family-Montserrat-SemiBold: "Montserrat-SemiBold";
+$Font-Family-Poppins-Black: "Poppins-Black";
+$Font-Family-Poppins-Bold: "Poppins-Bold";
+$Font-Family-Poppins-ExtraBold: "Poppins-ExtraBold";
+$Font-Family-Poppins-ExtraLight: "Poppins-ExtraLight";
+$Font-Family-Poppins-Medium: "Poppins-Medium";
+$Font-Family-Poppins-Light: "Poppins-Light";
+$Font-Family-Poppins-Regular: "Poppins-Regular";
+$Font-Family-Poppins-SemiBold: "Poppins-SemiBold";
+$Font-Family-Poppins-Thin: "Poppins-Thin";
+
+// Font Family Variables End Here
+
+// Padding Variables Start Here
+
+$Padding-2: 2px;
+$Padding-4: 4px;
+$Padding-6: 6px;
+$Padding-7: 7px;
+$Padding-8: 8px;
+$Padding-9: 9px;
+$Padding-10: 10px;
+$Padding-12: 12px;
+$Padding-14: 14px;
+$Padding-16: 16px;
+$Padding-18: 18px;
+$Padding-20: 20px;
+$Padding-22: 22px;
+$Padding-24: 24px;
+$Padding-26: 26px;
+$Padding-28: 28px;
+$Padding-30: 30px;
+$Padding-32: 32px;
+$Padding-34: 34px;
+$Padding-36: 36px;
+$Padding-38: 38px;
+$Padding-40: 40px;
+$Padding-42: 42px;
+$Padding-44: 44px;
+$Padding-46: 46px;
+$Padding-48: 48px;
+$Padding-50: 50px;
+$Padding-52: 52px;
+
+// Padding Variables End Here
+
+// Marging Variables Start Here
+
+$Margin-2: 2px;
+$Margin-4: 4px;
+$Margin-6: 6px;
+$Margin-8: 8px;
+$Margin-10: 10px;
+$Margin-12: 12px;
+$Margin-14: 14px;
+$Margin-16: 16px;
+$Margin-18: 18px;
+$Margin-20: 20px;
+$Margin-22: 22px;
+$Margin-24: 24px;
+$Margin-26: 26px;
+$Margin-28: 28px;
+$Margin-30: 30px;
+$Margin-32: 32px;
+$Margin-34: 34px;
+$Margin-36: 36px;
+$Margin-38: 38px;
+$Margin-40: 40px;
+$Margin-42: 42px;
+$Margin-44: 44px;
+$Margin-46: 46px;
+$Margin-48: 48px;
+$Margin-50: 50px;
+$Margin-52: 52px;
+
+// Marging Variables End Here
+
+// Border Radius Variables Start Here
+
+$Border-Radius-2: 2px;
+$Border-Radius-4: 4px;
+$Border-Radius-6: 6px;
+$Border-Radius-8: 8px;
+$Border-Radius-10: 10px;
+$Border-Radius-12: 12px;
+$Border-Radius-14: 14px;
+$Border-Radius-16: 16px;
+$Border-Radius-18: 18px;
+$Border-Radius-20: 20px;
+$Border-Radius-22: 22px;
+$Border-Radius-24: 24px;
+$Border-Radius-26: 26px;
+$Border-Radius-28: 28px;
+$Border-Radius-30: 30px;
+$Border-Radius-32: 32px;
+$Border-Radius-34: 34px;
+$Border-Radius-36: 36px;
+$Border-Radius-38: 38px;
+$Border-Radius-40: 40px;
+$Border-Radius-44: 44px;
+$Border-Radius-46: 46px;
+$Border-Radius-48: 48px;
+$Border-Radius-50: 50px;
+$Border-Radius-52: 52px;
+$Border-Radius-half-round: 50%;
+$Border-Radius-full-round: 100%;
+
+// Border Radius Variables End Here
+
+// Box Shadow Variables Start Here
+
+$Box-Shadow-Primary-1: 5px 5px 43px -28px rgba(54,108,227,1);
+$Box-Shadow-Primary-2: 5px 5px 43px -20px rgba(54,108,227,1);
+$Box-Shadow-Secondary-1: 5px 5px 43px -20px rgba(208,252,0,1);
+$Box-Shadow-Secondary-2: 5px 5px 43px -31px rgba(208,252,0,1);
+$Box-Shadow-1: 4px 4px 84px -80px rgba(0,0,0,1);
+$Box-Shadow-2: 0px 20px 50px rgb(0 0 0 / 10%);
+$Box-Shadow-3: 0px 20px 50px rgb(0 0 0 / 5%);
+$Box-Shadow-4: 0px 3px 11.31px 1.69px rgb(215 215 215 / 35%);
+$Box-Shadow-5: 0px 3px 11.31px 1.69px rgb(215 215 215 / 20%);
+$Box-Shadow-6: 0px 20px 20px 0px rgb(185 187 187 / 40%);
+
+// Box Shadow Variables End Here

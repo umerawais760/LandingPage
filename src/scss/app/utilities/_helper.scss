@@ -1,0 +1,2328 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    font-family: $Font-Family-Poppins-Bold;
+
+    @include breakpoint ($secreen-max-md) {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+    }
+
+    @include breakpoint ($secreen-xs) {
+        font-size: $font-size-h3;
+        line-height: $line-height-h3;
+    }
+
+    @include breakpoint ($secreen-xxs) {
+        font-size: $font-size-h4;
+        line-height: $line-height-h4;
+    }
+}
+
+h2 {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+    font-family: $Font-Family-Poppins-Bold;
+}
+
+h3 {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+h4 {
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+h5 {
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+h6 {
+    font-size: $font-size-h6;
+    line-height: $line-height-h6;
+    font-family: $Font-Family-Poppins-SemiBold;
+}
+
+.text-large {
+    font-size: $font-size-p-large;
+    line-height: $line-height-p-large;
+    font-family: $Font-Family-Inter-Regular;
+}
+
+.text-large-Bold {
+    font-size: $font-size-p-large;
+    line-height: $line-height-p-large;
+    font-family: $Font-Family-Inter-Medium;
+}
+
+.text-medium {
+    font-size: $font-size-p-medium;
+    line-height: $line-height-p-medium;
+    font-family: $Font-Family-Inter-Regular;
+}
+
+.text-medium-Bold {
+    font-size: $font-size-p-medium;
+    line-height: $line-height-p-medium;
+    font-family: $Font-Family-Inter-Medium;
+}
+
+.text-small {
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Regular;
+}
+
+.text-small-Bold {
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+}
+
+.text-x-small {
+    font-size: $font-size-p-x-small;
+    line-height: $line-height-p-x-small;
+    font-family: $Font-Family-Inter-Regular;
+}
+
+.text-x-small-Bold {
+    font-size: $font-size-p-x-small;
+    line-height: $line-height-p-x-small;
+    font-family: $Font-Family-Inter-Medium;
+}
+
+.text-xx-small {
+    font-size: $font-size-p-xx-small;
+    line-height: $line-height-p-xx-small;
+    font-family: $Font-Family-Inter-Regular;
+}
+
+.text-xx-small-Bold {
+    font-size: $font-size-p-xx-small;
+    line-height: $line-height-p-xx-small;
+    font-family: $Font-Family-Inter-Medium;
+}
+
+.padding-2 {
+    padding: $Padding-2;
+}
+
+.padding-4 {
+    padding: $Padding-4;
+}
+
+.padding-6 {
+    padding: $Padding-6;
+}
+
+.padding-8 {
+    padding: $Padding-8;
+}
+
+.padding-10 {
+    padding: $Padding-10;
+}
+
+.padding-12 {
+    padding: $Padding-12;
+}
+
+.padding-14 {
+    padding: $Padding-14;
+}
+
+.padding-16 {
+    padding: $Padding-16;
+}
+
+.padding-18 {
+    padding: $Padding-18;
+}
+
+.padding-20 {
+    padding: $Padding-20;
+}
+
+.padding-22 {
+    padding: $Padding-22;
+}
+
+.padding-24 {
+    padding: $Padding-24;
+}
+
+.padding-26 {
+    padding: $Padding-26;
+}
+
+.padding-28 {
+    padding: $Padding-28;
+}
+
+.padding-30 {
+    padding: $Padding-30;
+}
+
+.padding-32 {
+    padding: $Padding-32;
+}
+
+.padding-34 {
+    padding: $Padding-34;
+}
+
+.padding-36 {
+    padding: $Padding-36;
+}
+
+.padding-38 {
+    padding: $Padding-38;
+}
+
+.padding-40 {
+    padding: $Padding-40;
+}
+
+.padding-42 {
+    padding: $Padding-42;
+}
+
+.padding-44 {
+    padding: $Padding-44;
+}
+
+.padding-46 {
+    padding: $Padding-46;
+}
+
+.padding-48 {
+    padding: $Padding-48;
+}
+
+.padding-50 {
+    padding: $Padding-50;
+}
+
+.padding-52 {
+    padding: $Padding-52;
+}
+
+.padding-y-2 {
+    padding-top: $Padding-2;
+    padding-bottom: $Padding-2;
+}
+
+.padding-y-4 {
+    padding-top: $Padding-4;
+    padding-bottom: $Padding-4;
+}
+
+.padding-y-6 {
+    padding-top: $Padding-6;
+    padding-bottom: $Padding-6;
+}
+
+.padding-y-8 {
+    padding-top: $Padding-8;
+    padding-bottom: $Padding-8;
+}
+
+.padding-y-10 {
+    padding-top: $Padding-10;
+    padding-bottom: $Padding-10;
+}
+
+.padding-y-12 {
+    padding-top: $Padding-12;
+    padding-bottom: $Padding-12;
+}
+
+.padding-y-14 {
+    padding-top: $Padding-14;
+    padding-bottom: $Padding-14;
+}
+
+.padding-y-16 {
+    padding-top: $Padding-16;
+    padding-bottom: $Padding-16;
+}
+
+.padding-y-18 {
+    padding-top: $Padding-18;
+    padding-bottom: $Padding-18;
+}
+
+.padding-y-20 {
+    padding-top: $Padding-20;
+    padding-bottom: $Padding-20;
+}
+
+.padding-y-22 {
+    padding-top: $Padding-22;
+    padding-bottom: $Padding-22;
+}
+
+.padding-y-24 {
+    padding-top: $Padding-24;
+    padding-bottom: $Padding-24;
+}
+
+.padding-y-26 {
+    padding-top: $Padding-26;
+    padding-bottom: $Padding-26;
+}
+
+.padding-y-28 {
+    padding-top: $Padding-28;
+    padding-bottom: $Padding-28;
+}
+
+.padding-y-30 {
+    padding-top: $Padding-30;
+    padding-bottom: $Padding-30;
+}
+
+.padding-y-32 {
+    padding-top: $Padding-32;
+    padding-bottom: $Padding-32;
+}
+
+.padding-y-34 {
+    padding-top: $Padding-34;
+    padding-bottom: $Padding-34;
+}
+
+.padding-y-36 {
+    padding-top: $Padding-36;
+    padding-bottom: $Padding-36;
+}
+
+.padding-y-38 {
+    padding-top: $Padding-38;
+    padding-bottom: $Padding-38;
+}
+
+.padding-y-40 {
+    padding-top: $Padding-40;
+    padding-bottom: $Padding-40;
+}
+
+.padding-y-42 {
+    padding-top: $Padding-42;
+    padding-bottom: $Padding-42;
+}
+
+.padding-y-44 {
+    padding-top: $Padding-44;
+    padding-bottom: $Padding-44;
+}
+
+.padding-y-46 {
+    padding-top: $Padding-46;
+    padding-bottom: $Padding-46;
+}
+
+.padding-y-48 {
+    padding-top: $Padding-48;
+    padding-bottom: $Padding-48;
+}
+
+.padding-y-50 {
+    padding-top: $Padding-50;
+    padding-bottom: $Padding-50;
+}
+
+.padding-y-52 {
+    padding-top: $Padding-52;
+    padding-bottom: $Padding-52;
+}
+
+.padding-x-2 {
+    padding-right: $Padding-2;
+    padding-left: $Padding-2;
+}
+
+.padding-x-4 {
+    padding-right: $Padding-4;
+    padding-left: $Padding-4;
+}
+
+.padding-x-6 {
+    padding-right: $Padding-6;
+    padding-left: $Padding-6;
+}
+
+.padding-x-8 {
+    padding-right: $Padding-8;
+    padding-left: $Padding-8;
+}
+
+.padding-x-10 {
+    padding-right: $Padding-10;
+    padding-left: $Padding-10;
+}
+
+.padding-x-12 {
+    padding-right: $Padding-12;
+    padding-left: $Padding-12;
+}
+
+.padding-x-14 {
+    padding-right: $Padding-14;
+    padding-left: $Padding-14;
+}
+
+.padding-x-16 {
+    padding-right: $Padding-16;
+    padding-left: $Padding-16;
+}
+
+.padding-x-18 {
+    padding-right: $Padding-18;
+    padding-left: $Padding-18;
+}
+
+.padding-x-20 {
+    padding-right: $Padding-20;
+    padding-left: $Padding-20;
+}
+
+.padding-x-22 {
+    padding-right: $Padding-22;
+    padding-left: $Padding-22;
+}
+
+.padding-x-24 {
+    padding-right: $Padding-24;
+    padding-left: $Padding-24;
+}
+
+.padding-x-26 {
+    padding-right: $Padding-26;
+    padding-left: $Padding-26;
+}
+
+.padding-x-28 {
+    padding-right: $Padding-28;
+    padding-left: $Padding-28;
+}
+
+.padding-x-30 {
+    padding-right: $Padding-30;
+    padding-left: $Padding-30;
+}
+
+.padding-x-32 {
+    padding-right: $Padding-32;
+    padding-left: $Padding-32;
+}
+
+.padding-x-34 {
+    padding-right: $Padding-34;
+    padding-left: $Padding-34;
+}
+
+.padding-x-36 {
+    padding-right: $Padding-36;
+    padding-left: $Padding-36;
+}
+
+.padding-x-38 {
+    padding-right: $Padding-38;
+    padding-left: $Padding-38;
+}
+
+.padding-x-40 {
+    padding-right: $Padding-40;
+    padding-left: $Padding-40;
+}
+
+.padding-x-42 {
+    padding-right: $Padding-42;
+    padding-left: $Padding-42;
+}
+
+.padding-x-44 {
+    padding-right: $Padding-44;
+    padding-left: $Padding-44;
+}
+
+.padding-x-46 {
+    padding-right: $Padding-46;
+    padding-left: $Padding-46;
+}
+
+.padding-x-48 {
+    padding-right: $Padding-48;
+    padding-left: $Padding-48;
+}
+
+.padding-x-50 {
+    padding-right: $Padding-50;
+    padding-left: $Padding-50;
+}
+
+.padding-x-52 {
+    padding-right: $Padding-52;
+    padding-left: $Padding-52;
+}
+
+.padding-r-2 {
+    padding-right: $Padding-2;
+}
+
+.padding-r-4 {
+    padding-right: $Padding-4;
+}
+
+.padding-r-6 {
+    padding-right: $Padding-6;
+}
+
+.padding-r-8 {
+    padding-right: $Padding-8;
+}
+
+.padding-r-10 {
+    padding-right: $Padding-10;
+}
+
+.padding-r-12 {
+    padding-right: $Padding-12;
+}
+
+.padding-r-14 {
+    padding-right: $Padding-14;
+}
+
+.padding-r-16 {
+    padding-right: $Padding-16;
+}
+
+.padding-r-18 {
+    padding-right: $Padding-18;
+}
+
+.padding-r-20 {
+    padding-right: $Padding-20;
+}
+
+.padding-r-22 {
+    padding-right: $Padding-22;
+}
+
+.padding-r-24 {
+    padding-right: $Padding-24;
+}
+
+.padding-r-26 {
+    padding-right: $Padding-26;
+}
+
+.padding-r-28 {
+    padding-right: $Padding-28;
+}
+
+.padding-r-30 {
+    padding-right: $Padding-30;
+}
+
+.padding-r-32 {
+    padding-right: $Padding-32;
+}
+
+.padding-r-34 {
+    padding-right: $Padding-34;
+}
+
+.padding-r-36 {
+    padding-right: $Padding-36;
+}
+
+.padding-r-38 {
+    padding-right: $Padding-38;
+}
+
+.padding-r-40 {
+    padding-right: $Padding-40;
+}
+
+.padding-r-42 {
+    padding-right: $Padding-42;
+}
+
+.padding-r-44 {
+    padding-right: $Padding-44;
+}
+
+.padding-r-46 {
+    padding-right: $Padding-46;
+}
+
+.padding-r-48 {
+    padding-right: $Padding-48;
+}
+
+.padding-r-50 {
+    padding-right: $Padding-50;
+}
+
+.padding-r-52 {
+    padding-right: $Padding-52;
+}
+
+.padding-l-2 {
+    padding-left: $Padding-2;
+}
+
+.padding-l-4 {
+    padding-left: $Padding-4;
+}
+
+.padding-l-6 {
+    padding-left: $Padding-6;
+}
+
+.padding-l-8 {
+    padding-left: $Padding-8;
+}
+
+.padding-l-10 {
+    padding-left: $Padding-10;
+}
+
+.padding-l-12 {
+    padding-left: $Padding-12;
+}
+
+.padding-l-14 {
+    padding-left: $Padding-14;
+}
+
+.padding-l-16 {
+    padding-left: $Padding-16;
+}
+
+.padding-l-18 {
+    padding-left: $Padding-18;
+}
+
+.padding-l-20 {
+    padding-left: $Padding-20;
+}
+
+.padding-l-22 {
+    padding-left: $Padding-22;
+}
+
+.padding-l-24 {
+    padding-left: $Padding-24;
+}
+
+.padding-l-26 {
+    padding-left: $Padding-26;
+}
+
+.padding-l-28 {
+    padding-left: $Padding-28;
+}
+
+.padding-l-30 {
+    padding-left: $Padding-30;
+}
+
+.padding-l-32 {
+    padding-left: $Padding-32;
+}
+
+.padding-l-34 {
+    padding-left: $Padding-34;
+}
+
+.padding-l-36 {
+    padding-left: $Padding-36;
+}
+
+.padding-l-38 {
+    padding-left: $Padding-38;
+}
+
+.padding-l-40 {
+    padding-left: $Padding-40;
+}
+
+.padding-l-42 {
+    padding-left: $Padding-42;
+}
+
+.padding-l-44 {
+    padding-left: $Padding-44;
+}
+
+.padding-l-46 {
+    padding-left: $Padding-46;
+}
+
+.padding-l-48 {
+    padding-left: $Padding-48;
+}
+
+.padding-l-50 {
+    padding-left: $Padding-50;
+}
+
+.padding-l-52 {
+    padding-left: $Padding-52;
+}
+
+.padding-t-2 {
+    padding-top: $Padding-2;
+}
+
+.padding-t-4 {
+    padding-top: $Padding-4;
+}
+
+.padding-t-6 {
+    padding-top: $Padding-6;
+}
+
+.padding-t-8 {
+    padding-top: $Padding-8;
+}
+
+.padding-t-10 {
+    padding-top: $Padding-10;
+}
+
+.padding-t-12 {
+    padding-top: $Padding-12;
+}
+
+.padding-t-14 {
+    padding-top: $Padding-14;
+}
+
+.padding-t-16 {
+    padding-top: $Padding-16;
+}
+
+.padding-t-18 {
+    padding-top: $Padding-18;
+}
+
+.padding-t-20 {
+    padding-top: $Padding-20;
+}
+
+.padding-t-22 {
+    padding-top: $Padding-22;
+}
+
+.padding-t-24 {
+    padding-top: $Padding-24;
+}
+
+.padding-t-26 {
+    padding-top: $Padding-26;
+}
+
+.padding-t-28 {
+    padding-top: $Padding-28;
+}
+
+.padding-t-30 {
+    padding-top: $Padding-30;
+}
+
+.padding-t-32 {
+    padding-top: $Padding-32;
+}
+
+.padding-t-34 {
+    padding-top: $Padding-34;
+}
+
+.padding-t-36 {
+    padding-top: $Padding-36;
+}
+
+.padding-t-38 {
+    padding-top: $Padding-38;
+}
+
+.padding-t-40 {
+    padding-top: $Padding-40;
+}
+
+.padding-t-42 {
+    padding-top: $Padding-42;
+}
+
+.padding-t-44 {
+    padding-top: $Padding-44;
+}
+
+.padding-t-46 {
+    padding-top: $Padding-46;
+}
+
+.padding-t-48 {
+    padding-top: $Padding-48;
+}
+
+.padding-t-50 {
+    padding-top: $Padding-50;
+}
+
+.padding-t-52 {
+    padding-top: $Padding-52;
+}
+
+.padding-b-2 {
+    padding-bottom: $Padding-2;
+}
+
+.padding-b-4 {
+    padding-bottom: $Padding-4;
+}
+
+.padding-b-6 {
+    padding-bottom: $Padding-6;
+}
+
+.padding-b-8 {
+    padding-bottom: $Padding-8;
+}
+
+.padding-b-10 {
+    padding-bottom: $Padding-10;
+}
+
+.padding-b-12 {
+    padding-bottom: $Padding-12;
+}
+
+.padding-b-14 {
+    padding-bottom: $Padding-14;
+}
+
+.padding-b-16 {
+    padding-bottom: $Padding-16;
+}
+
+.padding-b-18 {
+    padding-bottom: $Padding-18;
+}
+
+.padding-b-20 {
+    padding-bottom: $Padding-20;
+}
+
+.padding-b-22 {
+    padding-bottom: $Padding-22;
+}
+
+.padding-b-24 {
+    padding-bottom: $Padding-24;
+}
+
+.padding-b-26 {
+    padding-bottom: $Padding-26;
+}
+
+.padding-b-28 {
+    padding-bottom: $Padding-28;
+}
+
+.padding-b-30 {
+    padding-bottom: $Padding-30;
+}
+
+.padding-b-32 {
+    padding-bottom: $Padding-32;
+}
+
+.padding-b-34 {
+    padding-bottom: $Padding-34;
+}
+
+.padding-b-36 {
+    padding-bottom: $Padding-36;
+}
+
+.padding-b-38 {
+    padding-bottom: $Padding-38;
+}
+
+.padding-b-40 {
+    padding-bottom: $Padding-40;
+}
+
+.padding-b-42 {
+    padding-bottom: $Padding-42;
+}
+
+.padding-b-44 {
+    padding-bottom: $Padding-44;
+}
+
+.padding-b-46 {
+    padding-bottom: $Padding-46;
+}
+
+.padding-b-48 {
+    padding-bottom: $Padding-48;
+}
+
+.padding-b-50 {
+    padding-bottom: $Padding-50;
+}
+
+.padding-b-52 {
+    padding-bottom: $Padding-52;
+}
+
+.margin-2 {
+    margin: $Margin-2;
+}
+
+.margin-4 {
+    margin: $Margin-4;
+}
+
+.margin-6 {
+    margin: $Margin-6;
+}
+
+.margin-8 {
+    margin: $Margin-8;
+}
+
+.margin-10 {
+    margin: $Margin-10;
+}
+
+.margin-12 {
+    margin: $Margin-12;
+}
+
+.margin-14 {
+    margin: $Margin-14;
+}
+
+.margin-16 {
+    margin: $Margin-16;
+}
+
+.margin-18 {
+    margin: $Margin-18;
+}
+
+.margin-20 {
+    margin: $Margin-20;
+}
+
+.margin-22 {
+    margin: $Margin-22;
+}
+
+.margin-24 {
+    margin: $Margin-24;
+}
+
+.margin-26 {
+    margin: $Margin-26;
+}
+
+.margin-28 {
+    margin: $Margin-28;
+}
+
+.margin-30 {
+    margin: $Margin-30;
+}
+
+.margin-32 {
+    margin: $Margin-32;
+}
+
+.margin-34 {
+    margin: $Margin-34;
+}
+
+.margin-36 {
+    margin: $Margin-36;
+}
+
+.margin-38 {
+    margin: $Margin-38;
+}
+
+.margin-40 {
+    margin: $Margin-40;
+}
+
+.margin-42 {
+    margin: $Margin-42;
+}
+
+.margin-44 {
+    margin: $Margin-44;
+}
+
+.margin-46 {
+    margin: $Margin-46;
+}
+
+.margin-48 {
+    margin: $Margin-48;
+}
+
+.margin-50 {
+    margin: $Margin-50;
+}
+
+.margin-52 {
+    margin: $Margin-52;
+}
+
+.margin-y-2 {
+    margin-top: $Margin-2;
+    margin-bottom: $Margin-2;
+}
+
+.margin-y-4 {
+    margin-top: $Margin-4;
+    margin-bottom: $Margin-4;
+}
+
+.margin-y-6 {
+    margin-top: $Margin-6;
+    margin-bottom: $Margin-6;
+}
+
+.margin-y-8 {
+    margin-top: $Margin-8;
+    margin-bottom: $Margin-8;
+}
+
+.margin-y-10 {
+    margin-top: $Margin-10;
+    margin-bottom: $Margin-10;
+}
+
+.margin-y-12 {
+    margin-top: $Margin-12;
+    margin-bottom: $Margin-12;
+}
+
+.margin-y-14 {
+    margin-top: $Margin-14;
+    margin-bottom: $Margin-14;
+}
+
+.margin-y-16 {
+    margin-top: $Margin-16;
+    margin-bottom: $Margin-16;
+}
+
+.margin-y-18 {
+    margin-top: $Margin-18;
+    margin-bottom: $Margin-18;
+}
+
+.margin-y-20 {
+    margin-top: $Margin-20;
+    margin-bottom: $Margin-20;
+}
+
+.margin-y-22 {
+    margin-top: $Margin-22;
+    margin-bottom: $Margin-22;
+}
+
+.margin-y-24 {
+    margin-top: $Margin-24;
+    margin-bottom: $Margin-24;
+}
+
+.margin-y-26 {
+    margin-top: $Margin-26;
+    margin-bottom: $Margin-26;
+}
+
+.margin-y-28 {
+    margin-top: $Margin-28;
+    margin-bottom: $Margin-28;
+}
+
+.margin-y-30 {
+    margin-top: $Margin-30;
+    margin-bottom: $Margin-30;
+}
+
+.margin-y-32 {
+    margin-top: $Margin-32;
+    margin-bottom: $Margin-32;
+}
+
+.margin-y-34 {
+    margin-top: $Margin-34;
+    margin-bottom: $Margin-34;
+}
+
+.margin-y-36 {
+    margin-top: $Margin-36;
+    margin-bottom: $Margin-36;
+}
+
+.margin-y-38 {
+    margin-top: $Margin-38;
+    margin-bottom: $Margin-38;
+}
+
+.margin-y-40 {
+    margin-top: $Margin-40;
+    margin-bottom: $Margin-40;
+}
+
+.margin-y-42 {
+    margin-top: $Margin-42;
+    margin-bottom: $Margin-42;
+}
+
+.margin-y-44 {
+    margin-top: $Margin-44;
+    margin-bottom: $Margin-44;
+}
+
+.margin-y-46 {
+    margin-top: $Margin-46;
+    margin-bottom: $Margin-46;
+}
+
+.margin-y-48 {
+    margin-top: $Margin-48;
+    margin-bottom: $Margin-48;
+}
+
+.margin-y-50 {
+    margin-top: $Margin-50;
+    margin-bottom: $Margin-50;
+}
+
+.margin-y-52 {
+    margin-top: $Margin-52;
+    margin-bottom: $Margin-52;
+}
+
+.margin-x-2 {
+    margin-right: $Margin-2;
+    margin-left: $Margin-2;
+}
+
+.margin-x-4 {
+    margin-right: $Margin-4;
+    margin-left: $Margin-4;
+}
+
+.margin-x-6 {
+    margin-right: $Margin-6;
+    margin-left: $Margin-6;
+}
+
+.margin-x-8 {
+    margin-right: $Margin-8;
+    margin-left: $Margin-8;
+}
+
+.margin-x-10 {
+    margin-right: $Margin-10;
+    margin-left: $Margin-10;
+}
+
+.margin-x-12 {
+    margin-right: $Margin-12;
+    margin-left: $Margin-12;
+}
+
+.margin-x-14 {
+    margin-right: $Margin-14;
+    margin-left: $Margin-14;
+}
+
+.margin-x-16 {
+    margin-right: $Margin-16;
+    margin-left: $Margin-16;
+}
+
+.margin-x-18 {
+    margin-right: $Margin-18;
+    margin-left: $Margin-18;
+}
+
+.margin-x-20 {
+    margin-right: $Margin-20;
+    margin-left: $Margin-20;
+}
+
+.margin-x-22 {
+    margin-right: $Margin-22;
+    margin-left: $Margin-22;
+}
+
+.margin-x-24 {
+    margin-right: $Margin-24;
+    margin-left: $Margin-24;
+}
+
+.margin-x-26 {
+    margin-right: $Margin-26;
+    margin-left: $Margin-26;
+}
+
+.margin-x-28 {
+    margin-right: $Margin-28;
+    margin-left: $Margin-28;
+}
+
+.margin-x-30 {
+    margin-right: $Margin-30;
+    margin-left: $Margin-30;
+}
+
+.margin-x-32 {
+    margin-right: $Margin-32;
+    margin-left: $Margin-32;
+}
+
+.margin-x-34 {
+    margin-right: $Margin-34;
+    margin-left: $Margin-34;
+}
+
+.margin-x-36 {
+    margin-right: $Margin-36;
+    margin-left: $Margin-36;
+}
+
+.margin-x-38 {
+    margin-right: $Margin-38;
+    margin-left: $Margin-38;
+}
+
+.margin-x-40 {
+    margin-right: $Margin-40;
+    margin-left: $Margin-40;
+}
+
+.margin-x-42 {
+    margin-right: $Margin-42;
+    margin-left: $Margin-42;
+}
+
+.margin-x-44 {
+    margin-right: $Margin-44;
+    margin-left: $Margin-44;
+}
+
+.margin-x-46 {
+    margin-right: $Margin-46;
+    margin-left: $Margin-46;
+}
+
+.margin-x-48 {
+    margin-right: $Margin-48;
+    margin-left: $Margin-48;
+}
+
+.margin-x-50 {
+    margin-right: $Margin-50;
+    margin-left: $Margin-50;
+}
+
+.margin-x-52 {
+    margin-right: $Margin-52;
+    margin-left: $Margin-52;
+}
+
+.margin-r-2 {
+    margin-right: $Margin-2;
+}
+
+.margin-r-4 {
+    margin-right: $Margin-4;
+}
+
+.margin-r-6 {
+    margin-right: $Margin-6;
+}
+
+.margin-r-8 {
+    margin-right: $Margin-8;
+}
+
+.margin-r-10 {
+    margin-right: $Margin-10;
+}
+
+.margin-r-12 {
+    margin-right: $Margin-12;
+}
+
+.margin-r-14 {
+    margin-right: $Margin-14;
+}
+
+.margin-r-16 {
+    margin-right: $Margin-16;
+}
+
+.margin-r-18 {
+    margin-right: $Margin-18;
+}
+
+.margin-r-20 {
+    margin-right: $Margin-20;
+}
+
+.margin-r-22 {
+    margin-right: $Margin-22;
+}
+
+.margin-r-24 {
+    margin-right: $Margin-24;
+}
+
+.margin-r-26 {
+    margin-right: $Margin-26;
+}
+
+.margin-r-28 {
+    margin-right: $Margin-28;
+}
+
+.margin-r-30 {
+    margin-right: $Margin-30;
+}
+
+.margin-r-32 {
+    margin-right: $Margin-32;
+}
+
+.margin-r-34 {
+    margin-right: $Margin-34;
+}
+
+.margin-r-36 {
+    margin-right: $Margin-36;
+}
+
+.margin-r-38 {
+    margin-right: $Margin-38;
+}
+
+.margin-r-40 {
+    margin-right: $Margin-40;
+}
+
+.margin-r-42 {
+    margin-right: $Margin-42;
+}
+
+.margin-r-44 {
+    margin-right: $Margin-44;
+}
+
+.margin-r-46 {
+    margin-right: $Margin-46;
+}
+
+.margin-r-48 {
+    margin-right: $Margin-48;
+}
+
+.margin-r-50 {
+    margin-right: $Margin-50;
+}
+
+.margin-r-52 {
+    margin-right: $Margin-52;
+}
+
+.margin-l-2 {
+    margin-left: $Margin-2;
+}
+
+.margin-l-4 {
+    margin-left: $Margin-4;
+}
+
+.margin-l-6 {
+    margin-left: $Margin-6;
+}
+
+.margin-l-8 {
+    margin-left: $Margin-8;
+}
+
+.margin-l-10 {
+    margin-left: $Margin-10;
+}
+
+.margin-l-12 {
+    margin-left: $Margin-12;
+}
+
+.margin-l-14 {
+    margin-left: $Margin-14;
+}
+
+.margin-l-16 {
+    margin-left: $Margin-16;
+}
+
+.margin-l-18 {
+    margin-left: $Margin-18;
+}
+
+.margin-l-20 {
+    margin-left: $Margin-20;
+}
+
+.margin-l-22 {
+    margin-left: $Margin-22;
+}
+
+.margin-l-24 {
+    margin-left: $Margin-24;
+}
+
+.margin-l-26 {
+    margin-left: $Margin-26;
+}
+
+.margin-l-28 {
+    margin-left: $Margin-28;
+}
+
+.margin-l-30 {
+    margin-left: $Margin-30;
+}
+
+.margin-l-32 {
+    margin-left: $Margin-32;
+}
+
+.margin-l-34 {
+    margin-left: $Margin-34;
+}
+
+.margin-l-36 {
+    margin-left: $Margin-36;
+}
+
+.margin-l-38 {
+    margin-left: $Margin-38;
+}
+
+.margin-l-40 {
+    margin-left: $Margin-40;
+}
+
+.margin-l-42 {
+    margin-left: $Margin-42;
+}
+
+.margin-l-44 {
+    margin-left: $Margin-44;
+}
+
+.margin-l-46 {
+    margin-left: $Margin-46;
+}
+
+.margin-l-48 {
+    margin-left: $Margin-48;
+}
+
+.margin-l-50 {
+    margin-left: $Margin-50;
+}
+
+.margin-l-52 {
+    margin-left: $Margin-52;
+}
+
+.margin-t-2 {
+    margin-top: $Margin-2;
+}
+
+.margin-t-4 {
+    margin-top: $Margin-4;
+}
+
+.margin-t-6 {
+    margin-top: $Margin-6;
+}
+
+.margin-t-8 {
+    margin-top: $Margin-8;
+}
+
+.margin-t-10 {
+    margin-top: $Margin-10;
+}
+
+.margin-t-12 {
+    margin-top: $Margin-12;
+}
+
+.margin-t-14 {
+    margin-top: $Margin-14;
+}
+
+.margin-t-16 {
+    margin-top: $Margin-16;
+}
+
+.margin-t-18 {
+    margin-top: $Margin-18;
+}
+
+.margin-t-20 {
+    margin-top: $Margin-20;
+}
+
+.margin-t-22 {
+    margin-top: $Margin-22;
+}
+
+.margin-t-24 {
+    margin-top: $Margin-24;
+}
+
+.margin-t-26 {
+    margin-top: $Margin-26;
+}
+
+.margin-t-28 {
+    margin-top: $Margin-28;
+}
+
+.margin-t-30 {
+    margin-top: $Margin-30;
+}
+
+.margin-t-32 {
+    margin-top: $Margin-32;
+}
+
+.margin-t-34 {
+    margin-top: $Margin-34;
+}
+
+.margin-t-36 {
+    margin-top: $Margin-36;
+}
+
+.margin-t-38 {
+    margin-top: $Margin-38;
+}
+
+.margin-t-40 {
+    margin-top: $Margin-40;
+}
+
+.margin-t-42 {
+    margin-top: $Margin-42;
+}
+
+.margin-t-44 {
+    margin-top: $Margin-44;
+}
+
+.margin-t-46 {
+    margin-top: $Margin-46;
+}
+
+.margin-t-48 {
+    margin-top: $Margin-48;
+}
+
+.margin-t-50 {
+    margin-top: $Margin-50;
+}
+
+.margin-t-52 {
+    margin-top: $Margin-52;
+}
+
+.margin-b-2 {
+    margin-bottom: $Margin-2;
+}
+
+.margin-b-4 {
+    margin-bottom: $Margin-4;
+}
+
+.margin-b-6 {
+    margin-bottom: $Margin-6;
+}
+
+.margin-b-8 {
+    margin-bottom: $Margin-8;
+}
+
+.margin-b-10 {
+    margin-bottom: $Margin-10;
+}
+
+.margin-b-12 {
+    margin-bottom: $Margin-12;
+}
+
+.margin-b-14 {
+    margin-bottom: $Margin-14;
+}
+
+.margin-b-16 {
+    margin-bottom: $Margin-16;
+}
+
+.margin-b-18 {
+    margin-bottom: $Margin-18;
+}
+
+.margin-b-20 {
+    margin-bottom: $Margin-20;
+}
+
+.margin-b-22 {
+    margin-bottom: $Margin-22;
+}
+
+.margin-b-24 {
+    margin-bottom: $Margin-24;
+}
+
+.margin-b-26 {
+    margin-bottom: $Margin-26;
+}
+
+.margin-b-28 {
+    margin-bottom: $Margin-28;
+}
+
+.margin-b-30 {
+    margin-bottom: $Margin-30;
+}
+
+.margin-b-32 {
+    margin-bottom: $Margin-32;
+}
+
+.margin-b-34 {
+    margin-bottom: $Margin-34;
+}
+
+.margin-b-36 {
+    margin-bottom: $Margin-36;
+}
+
+.margin-b-38 {
+    margin-bottom: $Margin-38;
+}
+
+.margin-b-40 {
+    margin-bottom: $Margin-40;
+}
+
+.margin-b-42 {
+    margin-bottom: $Margin-42;
+}
+
+.margin-b-44 {
+    margin-bottom: $Margin-44;
+}
+
+.margin-b-46 {
+    margin-bottom: $Margin-46;
+}
+
+.margin-b-48 {
+    margin-bottom: $Margin-48;
+}
+
+.margin-b-50 {
+    margin-bottom: $Margin-50;
+}
+
+.margin-b-52 {
+    margin-bottom: $Margin-52;
+}
+
+.btn-primary {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r4 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-4;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r4:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r8 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-8;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r8:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r12 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-12;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r12:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r16 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-16;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r16:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r20 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-20;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r20:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r24 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-24;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r24:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-r28 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Primary;
+    border-radius: $Border-Radius-28;
+    color: $White-Color;
+    transition: .3s;
+}
+
+.btn-primary-r28:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-primary-outline {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r4 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-4;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r4:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r8 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-8;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r8:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r12 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-12;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r12:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r16 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-16;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r16:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r20 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-20;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r20:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r24 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-24;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r24:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-primary-outline-r28 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Primary;
+    border-radius: $Border-Radius-28;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-primary-outline-r28:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r4 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-4;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r4:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r8 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-8;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r8:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r12 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-12;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r12:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r16 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-16;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r16:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r20 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-20;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r20:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r24 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-24;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r24:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-r28 {
+    padding: $Padding-8 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: $Secondary;
+    border-radius: $Border-Radius-28;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-r28:hover {
+    background-color: $Primary;
+    color: $White-Color;
+}
+
+.btn-secondary-outline {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r4 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-4;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r4:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r8 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-8;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r8:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r12 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-12;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r12:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r16 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-16;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r16:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r20 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-20;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r20:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r24 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-24;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r24:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.btn-secondary-outline-r28 {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid $Secondary;
+    border-radius: $Border-Radius-28;
+    color: $Black-Color;
+    transition: .3s;
+}
+
+.btn-secondary-outline-r28:hover {
+    background-color: $Secondary;
+    color: $Black-Color;
+}
+
+.theme-input {
+    padding: $Padding-7 $Padding-24;
+    font-size: $font-size-p-small;
+    line-height: $line-height-p-small;
+    font-family: $Font-Family-Inter-Medium;
+    background-color: transparent;
+    border: 1px solid $Gray-Shade-2;
+    border-radius: $Border-Radius-8;
+    color: $Black-Color;
+    transition: .3s;
+
+    &:focus {
+        border: 1px solid $Black-Color;
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $Gray-Shade-2;
+    }
+}
+
+@keyframes infinite-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes infinite-rotate2 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(360deg) scale(0.6);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes infinite-scale {
+    0% {
+        transform: scale(1) translateY(0px) translateX(0) rotate(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(.8) translateY(-50px) translateX(100px) rotate(560deg);
+        opacity: 50%;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px) translateX(0) rotate(0);
+        opacity: 1;
+    }
+}

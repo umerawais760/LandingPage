@@ -1,0 +1,90 @@
+
+
+/*=======================================
+        Navbar Css Start Here
+=======================================*/
+
+.header-main{
+    position: relative;
+}
+
+.header-main .logo-img{
+    width: 140px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-main .menu-li{
+    position: relative;
+}
+
+.header-main .menu-li:hover .dropdown-ul{
+    top: 56px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-main .menu-link{
+    color: $Black-Color;
+    line-height: $line-height-h2;
+    transition: .3s;
+}
+
+.header-main .menu-link:hover{
+    color: $Primary;
+}
+
+.header-main .dropdown-ul{
+    position: absolute;
+    top: 80px;
+    left: -24px;
+    width: 250px;
+    background-color: $White-Color;
+    box-shadow: $Box-Shadow-4;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: .3s;
+}
+
+.header-main .dropdown-ul .dropdown-link{
+    display: block;
+    padding: 8px 24px;
+    color: $Primary;
+    transition: .3s;
+}
+
+.header-main .dropdown-ul .dropdown-link:hover{
+    color: $White-Color;
+    background-color: $Primary;
+}
+
+/*=======================================
+        Navbar Css End Here
+=======================================*/
+
+/*=======================================
+        Navbar2 Css Start Here
+=======================================*/
+
+.header2{
+    .wrapper{
+        background-color: $White-Color;
+        position: relative;
+        box-shadow: $Box-Shadow-4;
+        z-index: 10000;
+    }
+    .menu-li:hover .dropdown-ul{
+        top: 96px;
+    }
+    .menu-link{
+        line-height: 96px;
+    }
+    .dropdown-ul{
+        top: 110px;
+    }
+}
+
+/*=======================================
+        Navbar2 Css Start Here
+=======================================*/
